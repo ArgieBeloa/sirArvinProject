@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sign Up Form </title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Sign Up</h2>
+        <div class="input-field">
+        <input type="text" required id="userEmailId">
+        <label>Email</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required id="userPasswordId">
+        <label>Password</label>
+      </div>
+      <div class="input-field">
+        <input type="password" required id="userConfirmPasswordId">
+        <label>Confirm your password</label>
+      </div>
+      <br>
+      <label>
+        <input type="checkbox" id="policyCheckbox" required>
+        I have read and agree to the <a href="/sirArvinProject/html/policy.html" target="_blank">terms and policies</a>.
+      </label><br><br>
+
+      
+      <button type="submit" id="registerId">Register</button>
+      
+    </form>
+  </div>
+ <script src="/sirArvinProject//js/signUp.js"></script>
+</body>
+</html>
