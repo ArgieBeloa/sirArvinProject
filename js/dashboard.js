@@ -9,17 +9,7 @@ function loadHTMLContent(file, targetSelector) {
         })
         .catch(error => console.error("Error loading HTML:", error));
 }
-function loadCSS(file) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = file;
-    document.head.appendChild(link);
-}
-function loadJS(file) {
-    const script = document.createElement('script');
-    script.src = file;
-    document.body.appendChild(script);
-}
+
 document.getElementById('scheduleButtonId').addEventListener('click', function () {
     const contentDivSelector = '.content';
     
@@ -35,8 +25,11 @@ document.getElementById('homePageButtonId').addEventListener('click', function (
     
     // Load HTML
     loadHTMLContent('../html/homePage.html', contentDivSelector);
-    
-   
-    
-   
+
 })
+
+// load homePage html
+window.onload = function() {
+  console.log('Data?')
+  loadHTMLContent('../html/homePage.html', '.content');
+};
