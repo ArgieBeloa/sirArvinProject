@@ -1,8 +1,6 @@
+console.log("New content JS loaded!");
 document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("myButton");
-    const text = document.getElementById("text");
-
-    button.addEventListener("click", () => {
-        text.textContent = "Text has changed!";
-    });
+    const message = document.createElement('p');
+    message.textContent = "This message is dynamically added via newContent.js!";
+    document.querySelector('.content').appendChild(message);
 });
