@@ -1,18 +1,26 @@
-* Content */
+:root{
+    --darkBlue: rgb(37, 100, 182); 
+    --secondaryColor: whitesmoke;
+}
 .content{
 
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor); */
+    background-color: var(--darkBlue);
 
 }
 /* Top search and status */
 .topContainer{
-    width: 100%;
-    height: 7%;
+    width: 98.5%;
+    height: 8%;
     display: grid;
-    background-color: var(--bgSecondary);
+    background-color: var(--secondaryColor);
     grid-template-columns: 2fr 1fr;
     place-content: center;
     color: white;
+    margin-left: 0.6rem;
+    border-radius: 7px;
+    border: 1px solid black;
+    
 }
 #dashboardStatus{
 
@@ -23,60 +31,75 @@
 /* Container Info */
 .containerInfo{
     width: 100%;
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor); */
     height: 25%;
     display: grid;
     column-gap: 0.7rem;
     grid-template-columns: repeat(4, 1fr);
     padding: 0.5rem;
+    background-color: var(--darkBlue);
 }
 .containerInfo div{
 width: 100%;
 height: auto;
 border-radius: 10px;
-background-color: var(--bgSecondary);
+background-color: var(--secondaryColor);
+border: 1px solid black;
 
 }
 
 /* Start schedule, events and grade by subject */
 .student_schedule_event_gradeStatues_container{
-    background-color: var();
+    /* background-color: var(--bgColor); */
+    background-color: var(--darkBlue);
     width: 100%;
     height: 67%;
     display: grid;
     column-gap: 0.7rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 0.5rem;
+   
 }
 
-.student_schedule_event_gradeStatues_container div{
-    background-color: var(--bgSecondary);
+.student_schedule_event_gradeStatues_container .schedule_Container{
+    background-color: var(--secondaryColor);
     border-radius: 10px;
+    border: 1px solid black;
 }
 .student_schedule_event_gradeStatues_container .events_and_Grade_Container{
     display: flex;
     width: 100%;
     height: auto;
     flex-direction: column;
-padding: 0.7rem;
+    /* background-color: var(--secondaryColor); */
+
 }
 .events_and_Grade_Container .event_and_nextClassContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0.7rem;
+    /* background-color: var(--secondaryColor); */
+    border-radius: 10px;
+   
+    
  
 }
 .events_and_Grade_Container .event_and_nextClassContainer div{
     width: 100%;
     height: 150px;
-    background-color: var(--bgColor);
+    background-color: var(--secondaryColor);
+    /* background-color: aqua; */
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .events_and_Grade_Container .gradeBySubjectContainer{
     margin-top: 0.7rem;
    width: 100%;
    height: 100%;
-   background-color: var(--bgColor);
+   background-color: var(--secondaryColor);
+   border: 1px solid black;
+   border-radius: 10px;
 }
 
 
