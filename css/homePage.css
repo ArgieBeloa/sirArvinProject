@@ -1,8 +1,11 @@
 :root{
     --darkBlue: rgb(37, 100, 182); 
     --secondaryColor: whitesmoke;
+    --textColor: rgb(0, 0, 0);
 }
-
+h1,h2,h3,h4,h5,h6{
+    color: var(--textColor);
+}
 .content{
     
     /* background-color: var(--bgColor); */
@@ -50,14 +53,38 @@ margin-left: 0.7rem;
     column-gap: 0.5rem;
     background-color: var(--darkBlue);
 }
-.containerInfo div{
-width: 100%;
-height: auto;
+.containerInfo .gwaTotalContainer, .eventAndReportContainer, .gwaPercentageContainer, .eventAndReportPercentageContainer{
+width: 25%;
+height: 100%;
 border-radius: 10px;
 background-color: var(--secondaryColor);
+display: flex;
+justify-content: center;
+align-items: center;
 border: 1px solid black;
+column-gap: 0.5rem;
 
 }
+span{
+    font-size: 13px;
+}
+
+.gwaTotalContainer .gwaTotal{
+ 
+    padding: 0.3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+/* .gwaStatusPercentageId{
+
+    width: 40%;
+    border-radius: 50%;
+    background-color: aquamarine;
+    height: 100%;
+} */
+/* end Container Info */
 
 /* Start schedule, events and grade by subject */
 .student_schedule_event_gradeStatues_container{
@@ -128,21 +155,34 @@ border: 1px solid black;
 
 /* small */
 @media screen and (min-width: 320px) {
+ span{
+    font-size: 8px;
+ }
  
 /* header changes */
-header{
+.content{
     font-size: 10px;
 }
 .containerInfo{
     display: grid;
    grid-template-columns: 1fr 1fr;
 
-flex-direction: column;
-height: 40%;
-row-gap: 0.7rem;
+   height: 60%;
+
+  column-gap: 0.1rem;
+}
+.containerInfo .gwaTotalContainer, .eventAndReportContainer, .gwaPercentageContainer, .eventAndReportPercentageContainer{
+    width: 90%;
+    height: 50%;
+font-size: 12px;
+column-gap: 0.1rem;
 
 }
 
+.containerInfo img{
+  
+    width: 20px;
+}
 /* Start schedule, events and grade by subject */
 
 
@@ -155,7 +195,9 @@ row-gap: 0.7rem;
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-   
+    h1 {
+        font-size: 40px;
+    }
     .container{
         grid-template-columns: 0.5fr 2fr;
     }
@@ -174,6 +216,9 @@ row-gap: 0.7rem;
        flex-direction: row;
        height: 30%;
     }
+    .containerInfo .gwaTotalContainer, .eventAndReportContainer, .gwaPercentageContainer, .eventAndReportPercentageContainer{
+ height: 100%;
+    }
     /* tablet  */
     .student_schedule_event_gradeStatues_container{
       display: grid;
@@ -183,4 +228,11 @@ row-gap: 0.7rem;
     .student_schedule_event_gradeStatues_container .schedule_Container{
         height: 100%;
     }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+    .containerInfo h1{
+    font-size: 45px;
+   }
 }
