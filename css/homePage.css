@@ -2,41 +2,52 @@
     --darkBlue: rgb(37, 100, 182); 
     --secondaryColor: whitesmoke;
 }
-.content{
 
+.content{
+    
     /* background-color: var(--bgColor); */
     background-color: var(--darkBlue);
-
+    display: flex;
+    flex-direction: column;
+     row-gap: 0.2rem;
+    margin-left: 0.3rem;
+    padding: 0.2rem;
 }
 /* Top search and status */
 .topContainer{
-    width: 98.5%;
+    margin-top: 0.1rem;
+    width: 100%;
     height: 8%;
-    display: grid;
+    /* display: grid; */
     background-color: var(--secondaryColor);
-    grid-template-columns: 2fr 1fr;
-    place-content: center;
+    /* grid-template-columns: 2fr 1fr; */
+    /* place-content: center; */
     color: white;
-    margin-left: 0.6rem;
+    display: flex;
+    align-items: center;
+
+
+    /* margin-left: 0.6rem; */
     border-radius: 7px;
     border: 1px solid black;
     
 }
 #dashboardStatus{
-
-  display: flex;
-  margin-left: 1rem;
+margin-left: 0.7rem;
 }
+
+
 
 /* Container Info */
 .containerInfo{
     width: 100%;
     /* background-color: var(--bgColor); */
-    height: 25%;
-    display: grid;
+    height: 20%;
+    /* display: grid;
     column-gap: 0.7rem;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0.5rem;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    column-gap: 0.5rem;
     background-color: var(--darkBlue);
 }
 .containerInfo div{
@@ -52,49 +63,59 @@ border: 1px solid black;
 .student_schedule_event_gradeStatues_container{
     /* background-color: var(--bgColor); */
     background-color: var(--darkBlue);
+ 
     width: 100%;
-    height: 67%;
-    display: grid;
+    height: 100%;
+    /* display: grid;
     column-gap: 0.7rem;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0.5rem;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    row-gap: 0.5rem;
+    
+    
    
 }
 
 .student_schedule_event_gradeStatues_container .schedule_Container{
     background-color: var(--secondaryColor);
+    width: 100%;
+    height: 90%;
     border-radius: 10px;
     border: 1px solid black;
 }
 .student_schedule_event_gradeStatues_container .events_and_Grade_Container{
-    display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    /* background-color: var(--secondaryColor); */
+    row-gap: 0.5rem;
+    background-color: var(--darkBlue);
 
 }
 .events_and_Grade_Container .event_and_nextClassContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 0.7rem;
-    /* background-color: var(--secondaryColor); */
-    border-radius: 10px;
-   
+    width: 100%;
+    height: 70%;
+    background-color: var(--darkBlue);
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 0.5rem;
     
  
 }
 .events_and_Grade_Container .event_and_nextClassContainer div{
-    width: 100%;
+    /* width: 100%;
     height: 150px;
     background-color: var(--secondaryColor);
     /* background-color: aqua; */
+    background-color: var(--secondaryColor);
     border-radius: 10px;
     border: 1px solid black;
-}
+
+} 
 
 .events_and_Grade_Container .gradeBySubjectContainer{
-    margin-top: 0.7rem;
    width: 100%;
    height: 100%;
    background-color: var(--secondaryColor);
@@ -107,13 +128,28 @@ border: 1px solid black;
 
 /* small */
 @media screen and (min-width: 320px) {
-    .userProfile{
-        width: 100%;
-        height: 20%;
-    }
-    .menu  button h4{
-        display: none;
-    }
+ 
+/* header changes */
+header{
+    font-size: 10px;
+}
+.containerInfo{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+
+flex-direction: column;
+height: 40%;
+row-gap: 0.7rem;
+
+}
+
+/* Start schedule, events and grade by subject */
+
+
+
+
+
+
 
 }
 
@@ -130,5 +166,21 @@ border: 1px solid black;
     .menu  button h4{
         display: block;
     }
-
+    header{
+        font-size: 16px;
+    }
+    .containerInfo{
+       display: flex;
+       flex-direction: row;
+       height: 30%;
+    }
+    /* tablet  */
+    .student_schedule_event_gradeStatues_container{
+      display: grid;
+      column-gap: 0.7rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .student_schedule_event_gradeStatues_container .schedule_Container{
+        height: 100%;
+    }
 }

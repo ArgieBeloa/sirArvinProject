@@ -31,7 +31,7 @@ homePageButton.addEventListener('click',()=> {
     imgElementSchedule.src = '../images/icon/schedule (1).png'
     imgElementRemainders.scr = '../images/icon/sticky-note (1).png'
     imgElementGoals.src = '../images/icon/goal (1).png'
-    imgElementSettings.src = '../images/icon/settings (1).png'
+    imgElementSettings.src = '../images/icon/logout (1).png'
 })
 
 
@@ -42,7 +42,7 @@ scheduleButton.addEventListener('click', function () {
       imgElementHomePage.src = '../images/icon/home (1).png'
       imgElementRemainders.src = '../images/icon/sticky-note (1).png'
       imgElementGoals.src = '../images/icon/goal (1).png'
-      imgElementSettings.src = '../images/icon/settings (1).png'
+      imgElementSettings.src = '../images/icon/logout (1).png'
 
     //   schedule fill icon
       imgElementSchedule.src = '../images/icon/schedule.png'
@@ -61,7 +61,7 @@ remaindersButton.addEventListener('click', ()=>{
     imgElementHomePage.src = '../images/icon/home (1).png'
     imgElementSchedule.src = '../images/icon/schedule (1).png'
     imgElementGoals.src = '../images/icon/goal (1).png'
-    imgElementSettings.src = '../images/icon/settings (1).png'
+    imgElementSettings.src = '../images/icon/logout (1).png'
 
       // remainders fill icon
     imgElementRemainders.src = '../images/icon/sticky-note.png'
@@ -74,7 +74,7 @@ goalsButton.addEventListener('click', ()=>{
     imgElementHomePage.src = '../images/icon/home (1).png'
     imgElementSchedule.src = '../images/icon/schedule (1).png'
     imgElementRemainders.src = '../images/icon/sticky-note (1).png'
-    imgElementSettings.src = '../images/icon/settings (1).png'
+    imgElementSettings.src = '../images/icon/logout (1).png'
 
     // fill Goal icon
     imgElementGoals.src = '../images/icon/goal.png'
@@ -90,7 +90,7 @@ settingsButton.addEventListener('click', ()=>{
       imgElementGoals.src = '../images/icon/goal (1).png'
 
     // fill image icon
-    imgElementSettings.src = '../images/icon/settings.png'
+    imgElementSettings.src = '../images/icon/logout.png'
 })
 
 
